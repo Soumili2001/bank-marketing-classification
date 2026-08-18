@@ -48,8 +48,6 @@ The dataset contains:
 * **Binary classification problem**
 * **0 duplicate rows**
 
-Therefore, the dataset satisfies the assignment requirements of a minimum of 500 instances and 12 features.
-
 ### Features
 
 The 16 input features are:
@@ -105,43 +103,13 @@ The split was performed using stratification to preserve the class distribution.
 
 **GitHub Repository:**
 
-> Replace this line with the actual GitHub repository URL after creating the repository.
-
-`YOUR_GITHUB_REPOSITORY_LINK`
+https://github.com/Soumili2001/bank-marketing-classification
 
 ---
 
-## 4. Models Used
+## 4. Models Comparison
 
 Six classification models were implemented using the same dataset and the same train-test split.
-
-### 4.1 Logistic Regression
-
-Logistic Regression is a linear classification algorithm that estimates the probability of a binary outcome. It provides a simple baseline model and is computationally efficient.
-
-### 4.2 Decision Tree Classifier
-
-Decision Tree is a non-linear classification algorithm that recursively divides the data based on feature values. It is easy to interpret and can capture non-linear relationships.
-
-### 4.3 K-Nearest Neighbors
-
-KNN classifies an observation based on the classes of its nearest neighboring observations. Feature scaling is particularly important for KNN because it relies on distance calculations.
-
-### 4.4 Gaussian Naive Bayes
-
-Gaussian Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It assumes that numerical features follow a Gaussian distribution within each class and that the features are conditionally independent.
-
-### 4.5 Random Forest
-
-Random Forest is an ensemble learning method that combines multiple decision trees. It generally provides better generalization than an individual decision tree and can capture complex non-linear relationships.
-
-### 4.6 Support Vector Machine
-
-Support Vector Machine attempts to find a decision boundary that maximizes the separation between classes. A linear SVM was used because of the relatively large training dataset and computational efficiency.
-
----
-
-## 5. Model Comparison
 
 The following table presents the evaluation results obtained on the test dataset.
 
@@ -156,7 +124,7 @@ The following table presents the evaluation results obtained on the test dataset
 
 ---
 
-## 6. Observations on Model Performance
+## 5. Observations on Model Performance
 
 | ML Model                 | Observation About Model Performance                                                                                                                                                                                                                                     |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -169,7 +137,7 @@ The following table presents the evaluation results obtained on the test dataset
 
 ---
 
-## 7. Overall Winner
+## Overall Winner
 
 ### Random Forest
 
@@ -190,9 +158,11 @@ Although Naive Bayes achieved the highest Recall (0.5198), its precision was con
 
 ---
 
-## 8. Streamlit Application
+## 6. Streamlit Application
 
-An interactive Streamlit web application was developed to demonstrate the trained classification models.
+An interactive Streamlit web application was developed to demonstrate the trained classification models
+
+Streamlit App Link: https://bank-marketing-classification-h8axwnvb8ksoi8pipambtx.streamlit.app/
 
 The application provides the following functionality:
 
@@ -232,7 +202,7 @@ The application also displays the classification report containing class-level p
 
 ---
 
-## 9. Project Structure
+## 7. Project Structure
 
 ```text
 Bank_Classification/
@@ -255,7 +225,7 @@ Bank_Classification/
 
 ---
 
-## 10. Requirements
+## 8. Requirements
 
 The project uses the following Python libraries:
 
@@ -272,53 +242,7 @@ All required dependencies are listed in `requirements.txt`.
 
 ---
 
-## 11. How to Run the Application Locally
-
-### Step 1: Install the dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 2: Run the Streamlit application
-
-```bash
-python -m streamlit run app.py
-```
-
-### Step 3: Open the application
-
-The application will be available at the local Streamlit URL, typically:
-
-```text
-http://localhost:8501
-```
-
-### Step 4: Upload Test Data
-
-Upload:
-
-```text
-test_data.csv
-```
-
-Then select a model from the model selection dropdown to view its evaluation results.
-
----
-
-## 12. Deployment
-
-The application is intended to be deployed using Streamlit Community Cloud.
-
-**Live Streamlit Application:**
-
-> Replace this line with the deployed Streamlit application URL.
-
-`YOUR_STREAMLIT_APP_LINK`
-
----
-
-## 13. Conclusion
+## 9. Conclusion
 
 This project demonstrates an end-to-end machine learning classification workflow, starting from dataset selection and preprocessing, followed by implementation and evaluation of six classification algorithms.
 
